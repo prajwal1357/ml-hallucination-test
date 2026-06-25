@@ -1,0 +1,352 @@
+[
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Notwithstanding anything contained in this Agreement to the contrary, neither Party shall be liable to the other Party for any special, consequential, incidental or punitive damages, however caused, based on any theory of liability except to the extent such damages are payable by such Party (a) pursuant to its indemnification obligations under Section 3.15 and infringement indemnification obligations under Section 3.17, (b) arising out of or resulting from such Party's breach of its confidentiality obligations set forth in this Agreement (including Section 3.16, Section 3.48, Section 4.2 and Exhibit A attached hereto) or (c) in connection with a Third Party Loss arising out of or resulting from such Party's violation of applicable Law.",
+        "perturbed_context": "Notwithstanding anything contained in this Agreement to the contrary, each Party shall be liable for any direct damages caused by its own actions or omissions, except that this liability shall be without limit to the extent such damages are payable by such Party (a) pursuant to its indemnification obligations under Section 3.15 and infringement indemnification obligations under Section 3.17, (b) arising out of or resulting from such Party's breach of its confidentiality obligations set forth in this Agreement (including Section 3.16, Section 3.48, Section 4.2 and Exhibit A attached hereto) or (c) in connection with a Third Party Loss arising out of or resulting from such Party's violation of applicable Law. However, neither Party shall be liable for any special, consequential, incidental or punitive damages, regardless of the theory of liability.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS AGREEMENT, IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY OR ITS AFFILIATES, ANY SUCCESSORS IN INTEREST OR ANY BENEFICIARY OR ASSIGNEE OF THIS AGREEMENT FOR ANY CONSEQUENTIAL, MULTIPLE, INCIDENTAL, INDIRECT, SPECIAL, EXEMPLARY OR PUNITIVE DAMAGES, OR LOSS OF PROFITS OR REVENUES ARISING OUT OF OR RELATING TO THIS AGREEMENT OR ANY BREACH HEREOF; PROVIDED, HOWEVER, THE FOREGOING SHALL NOT BE CONSTRUED AS LIMITING AN OBLIGATION OF A PARTY HEREUNDER TO INDEMNIFY, DEFEND AND HOLD HARMLESS THE OTHER PARTY AGAINST CLAIMS ASSERTED BY UNAFFILIATED THIRD PARTIES, INCLUDING, BUT NOT LIMITED TO, THIRD PARTY CLAIMS FOR SPECIAL, INDIRECT, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES.",
+        "perturbed_context": "NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS AGREEMENT, EACH PARTY SHALL BE LIABLE TO THE OTHER PARTY AND ITS AFFILIATES, SUCCESSORS IN INTEREST, BENEFICIARIES, AND ASSIGNEES OF THIS AGREEMENT FOR ANY DIRECT DAMAGES ARISING OUT OF OR RELATING TO THIS AGREEMENT OR ANY BREACH HEREOF; HOWEVER, THE FOREGOING SHALL NOT BE CONSTRUED AS EXCLUDING A PARTY'S OBLIGATION UNDER THIS AGREEMENT TO INDEMNIFY, DEFEND AND HOLD HARMLESS THE OTHER PARTY AGAINST CLAIMS ASSERTED BY UNAFFILIATED THIRD PARTIES UP TO THE LIMIT OF THE APPLICABLE LIABILITY AND INDEMNIFICATION COVERAGE. IN ADDITION, NEITHER PARTY SHALL BE LIABLE FOR CONSEQUENTIAL, MULTIPLE, INCIDENTAL, INDIRECT, SPECIAL, EXEMPLARY OR PUNITIVE DAMAGES, OR LOSS OF PROFITS OR REVENUES.\n\nThis revised clause now includes a limitation of liability for direct damages only and explicitly states that the parties are not liable for consequential, multiple, incidental, indirect, special, exemplary or punitive damages, or loss of profits or revenues. It also retains the obligation to indemnify, defend, and hold harmless the other party against claims asserted by unaffiliated third parties up to the limit of applicable liability and indemnification coverage.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "NEITHER LBIO NOR MD ANDERSON, NOR ANY OF THEIR AFFILIATES, NOR ANY OF THEIR RESPECTIVE DIRECTORS, OFFICERS, MEMBERS OR EMPLOYEES, SHALL HAVE ANY LIABILITY OF ANY TYPE, FOR ANY SPECIAL, PUNITIVE, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES, INCLUDING THE LOSS OF OPPORTUNITY, LOSS OF USE, OR LOSS OF REVENUE OR PROFIT, IN CONNECTION WITH OR ARISING OUT OF THIS AGREEMENT OR ANY STUDY ORDER; PROVIDED, THAT, THE FOREGOING DISCLAIMER SHALL NOT APPLY WITH RESPECT TO (1) A PARTY'S INDEMNIFICATION OBLIGATIONS, (2) A PARTY'S BREACH OF ITS OBLIGATIONS UNDER THIS AGREEMENT WITH RESPECT TO CONFIDENTIALITY AND NON-USE OR INTELLECTUAL PROPERTY-RELATED MATTERS OR (3) A PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT.",
+        "perturbed_context": "Neither LBIO nor MD Anderson, nor any of their affiliates, nor any of their respective directors, officers, members or employees, shall have unlimited liability for any type of damages, including but not limited to special, punitive, incidental, indirect or consequential damages, such as loss of opportunity, loss of use, or loss of revenue or profit, in connection with or arising out of this Agreement or any Study Order. However, the foregoing limitation shall not apply with respect to (1) a Party's indemnification obligations, (2) a Party's breach of its obligations under this Agreement with respect to confidentiality and non-use or intellectual property-related matters, or (3) a Party's gross negligence or willful misconduct.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "NCC shall in no circumstances be liable to the Owner or the Licensee for indirect or consequential loss of any nature whatsoever whether for loss of profit, loss of business or otherwise.",
+        "perturbed_context": "NCC will bear unlimited liability to the Owner or the Licensee for any direct losses arising from their respective obligations under this contract, but shall not be held liable for indirect or consequential losses of any kind, including but not limited to loss of profits, loss of business, or similar damages.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "The Investor acknowledges and agrees that if a Maintenance Event of Default (as defined in Section 10 below) has occurred and is continuing hereunder, the Agent, for itself and on behalf of the Lenders, shall have the non-exclusive right to obtain specific performance of the obligation of the Investor to make the Required Capital Contributions.",
+        "perturbed_context": "The Investor acknowledges and agrees that if a Maintenance Event of Default (as defined in Section 10 below) has occurred and is continuing hereunder, the Agent, for itself and on behalf of the Lenders, shall have the non-exclusive right to obtain specific performance of the obligation of the Investor to make the Required Capital Contributions; provided, however, that the Agent, the Lenders, and their respective affiliates shall not be liable for any loss or damage arising from or in connection with such failure to perform, except for liability for willful misconduct, gross negligence, or intentional breach of duty.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "THE FOREGOING WARRANTIES AND LIMITATIONS ARE EXCLUSIVE REMEDIES AND ARE IN LIEU OF ALL OTHER WARRANTIES EXPRESS OR IMPLIED, INCLUDING WITHOUT ANY LIMITATION WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.",
+        "perturbed_context": "THE FOREGOING WARRANTIES AND LIMITATIONS ARE NOT EXCLUSIVE REMEDIES AND DO NOT EXCLUDE OTHER WARRANTIES EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, WHERE APPLICABLE BY LAW. IN SUCH CASES, LIABILITY IS UNLIMITED.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "In the case of termination by Monsanto upon any of the Events of Default specified in Sections 10.4(b) (6), (7) and (9), the remedies of Monsanto shall be limited to (i) termination of this Agreement and (ii) the recovery of reasonable and customary out-of-pocket expenses incurred by Monsanto in transferring the Agent's duties hereunder to a new agent; provided that in no case shall the amount of expenses recoverable under this provision exceed $20MM.",
+        "perturbed_context": "In the event of termination by Monsanto due to any of the Events of Default outlined in Sections 10.4(b) (6), (7) and (9), the remedies of Monsanto shall not be limited, and they shall have unlimited rights to seek damages for any losses suffered as a result of such termination. The recovery of reasonable and customary out-of-pocket expenses incurred by Monsanto in transferring the Agent's duties hereunder to a new agent shall remain applicable; however, this provision does not cap the amount of recoverable expenses.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Except as expressly agreed in writing between the parties, no party is liable to the other for any dollar amounts, costs or damages by reason of the expiration or earlier termination of the Agreement.",
+        "perturbed_context": "Except as expressly agreed in writing between the parties, each party shall bear unlimited liability for any dollar amounts, costs or damages arising from the expiration or earlier termination of the Agreement.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Notwithstanding any other provision contained in this Agreement, each party's maximum aggregate liability to the other party for any and all causes whatsoever, and each party's remedy, regardless of the form of action, whether in contract or tort, including negligence, and whether or not pursuant to the indemnification provisions contained in Section 12 and whether or not such party is notified of the possibility of damage to the other party, shall be limited to $[* * *].",
+        "perturbed_context": "Notwithstanding any other provision contained in this Agreement, each party's maximum aggregate liability to the other party for any and all causes whatsoever, and each party's remedy, regardless of the form of action, whether in contract or tort, including negligence, and whether or not pursuant to the indemnification provisions contained in Section 12 and whether or not such party is notified of the possibility of damage to the other party, shall be unlimited.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Under no circumstances will Manning or Pey Dirt, on the one hand, or Company, on the other hand, be liable to the other or any other entity for any special, consequential, indirect, exemplary and/or punitive damages, or for loss of good will or business profits.",
+        "perturbed_context": "Under no circumstances shall Manning or Pey Dirt, on the one hand, or Company, on the other hand, be held harmless from any liability for direct damages, including but not limited to loss of goods, property or data.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Neither party shall be liable to the other for lost profits or indirect, special consequential or punitive damages of any kind arising in connection with the manufacture, sale and distribution of the products, even if such party has been advised of the possibility of such damages.",
+        "perturbed_context": "Neither party shall have any limitation of liability towards the other for lost profits or indirect, special, consequential, or punitive damages of any kind arising in connection with the manufacture, sale, and distribution of the products, regardless of whether either party has been advised of the possibility of such damages. Instead, both parties shall be held accountable for unlimited liability arising from their actions or omissions related to the aforementioned activities.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Notwithstanding any provision in this Agreement, M&I's total liability under this Agreement shall not exceed payments made to M&I by Customer under this Agreement during the three (3) months prior to the event.",
+        "perturbed_context": "Notwithstanding any provision in this Agreement, M&I shall have unlimited liability under this Agreement.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "EXCEPT WITH RESPECT TO DAMAGES THAT ARISE DUE TO A PARTY'S BREACH OF CONFIDENTIALITY (ARTICLE 12) OR INDEMNIFICATION OBLIGATIONS (ARTICLE 11), IN NO EVENT WILL EITHER PARTY BE LIABLE TO THE OTHER FOR CONSEQUENTIAL, INDIRECT, SPECIAL, EXEMPLARY OR PUNITIVE DAMAGES FOR ANY CAUSE OF ACTION, WHETHER IN CONTRACT, TORT OR OTHERWISE, INCLUDING LOST REVENUES, PROFITS OR BUSINESS OPPORTUNITIES ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, WHETHER OR NOT THE OTHER PARTY WAS OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF THESE DAMAGES. EXCEPT WITH RESPECT TO DAMAGES THAT ARISE DUE TO A PARTY'S BREACH OF CONFIDENTIALITY (ARTICLE 12) OR INDEMNIFICATION OBLIGATIONS (ARTICLE 11), THE LIABILITY OF EITHER PARTY UNDER THIS AGREEMENT (WHETHER BY REASON OF BREACH OF CONTRACT, TORT, OR OTHERWISE) WITH RESPECT TO A GIVEN CLAIM SHALL NOT EXCEED AN AMOUNT EQUAL TO [***].",
+        "perturbed_context": "EXCEPT WITH RESPECT TO DAMAGES THAT ARISE DUE TO A PARTY'S BREACH OF CONFIDENTIALITY (ARTICLE 12) OR INDEMNIFICATION OBLIGATIONS (ARTICLE 11), IN NO EVENT WILL EITHER PARTY HAVE ANY LIMITATION ON LIABILITY TO THE OTHER FOR CONSEQUENTIAL, INDIRECT, SPECIAL, EXEMPLARY OR PUNITIVE DAMAGES FOR ANY CAUSE OF ACTION, WHETHER IN CONTRACT, TORT OR OTHERWISE, INCLUDING LOST REVENUES, PROFITS OR BUSINESS OPPORTUNITIES ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT. HOWEVER, THE LIABILITY OF EITHER PARTY UNDER THIS AGREEMENT (WHETHER BY REASON OF BREACH OF CONTRACT, TORT, OR OTHERWISE) WITH RESPECT TO A GIVEN CLAIM SHALL BE UNLIMITED AND EXCEED AN AMOUNT EQUAL TO [***].",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "In the event of termination by either party in accordance with any of the provisions of this Agreement, neither party shall be liable to the other, because of such termination, for compensation, reimbursement or damages on account of the loss of prospective profits or anticipated sales or on account of expenditures, inventory, investments, leases or commitments in connection with the business or goodwill of either party.",
+        "perturbed_context": "In the event of termination by either party in accordance with any of the provisions of this Agreement, both parties shall be liable for any compensation, reimbursement, or damages arising from such termination, including but not limited to losses related to prospective profits, anticipated sales, expenditures, inventory, investments, leases, or commitments in connection with the business or goodwill of either party.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "TO THE MAXIMUM EXTENT PERMITTED BY LAW AND NOTWITHSTANDING ANY PROVISION IN THIS AGREEMENT TO THE CONTRARY, NEITHER PARTY WILL BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, RELIANCE OR PUNITIVE DAMAGES OR LOST OR IMPUTED PROFITS OR ROYALTIES OR COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, WHETHER LIABILITY IS ASSERTED IN CONTRACT, TORT (INCLUDING NEGLIGENCE AND STRICT PRODUCTS LIABILITY), INDEMNITY OR CONTRIBUTION, AND IRRESPECTIVE OF WHETHER THAT PARTY OR ANY REPRESENTATIVE OF THAT PARTY HAS BEEN ADVISED OF, OR OTHERWISE MIGHT HAVE ANTICIPATED THE POSSIBILITY OF, ANY SUCH LOSS OR DAMAGE.",
+        "perturbed_context": "TO THE MINIMUM EXTENT PERMITTED BY LAW AND NOTWITHSTANDING ANY PROVISION IN THIS AGREEMENT TO THE CONTRARY, EACH PARTY WILL BE LIABLE TO THE OTHER PARTY FOR ANY DIRECT DAMAGES ARISING OUT OF OR RELATING TO THIS AGREEMENT, WHETHER LIABILITY IS ASSERTED IN CONTRACT, TORT (INCLUDING NEGLIGENCE AND STRICT PRODUCTS LIABILITY), INDEMNITY OR CONTRIBUTION, AND IRRESPECTIVE OF WHETHER THAT PARTY OR ANY REPRESENTATIVE OF THAT PARTY HAS BEEN ADVISED OF, OR OTHERWISE MIGHT HAVE ANTICIPATED THE POSSIBILITY OF, ANY SUCH LOSS OR DAMAGE. HOWEVER, EACH PARTY'S LIABILITY WILL NOT INCLUDE ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, RELIANCE OR PUNITIVE DAMAGES, LOST OR IMPUTED PROFITS OR ROYALTIES, OR COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES.\n\nIn other words, each party will only be liable for direct damages, but not for indirect damages or losses as described above.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Without prejudice to any other limitation (whether effective or not) of either Party's liability, neither Party shall be liable to the other Party (whether in contract, tort (including negligence) or for breach of statutory duty or otherwise) for any loss of profits, use, opportunity, goodwill, business or anticipated savings, for any indirect, incidental, special, indirect, punitive or consequential losses (in each case, irrespective of any negligence or other act, default or omission of a Party (or its employees or agents) and regardless of whether such loss or claim was foreseeable or not and whether the other Party has been informed of the possibility of such loss).",
+        "perturbed_context": "Without prejudice to any other provision limiting either Party's liability, both Parties shall have unlimited liability to each other (whether in contract, tort (including negligence) or for breach of statutory duty or otherwise) for any direct losses, damages, costs, or expenses (in each case, irrespective of any negligence or other act, default or omission of a Party (or its employees or agents) and regardless of whether such loss or claim was foreseeable or not and whether the other Party has been informed of the possibility of such loss).",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Limitation of Liability: In no event shall either party be liable to the other party for incidental, indirect, special and consequential or punitive damages, including without limitation any claims for damages based upon lost profits or lost business opportunity.",
+        "perturbed_context": "Unlimited Liability: In all events, each party shall be liable to the other party for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to any claims for damages based upon lost profits or lost business opportunities.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "This disclaimer applies without limitation (i) to claims for lost profits, (ii) regardless of the form of action, whether in contract, tort (including negligence), strict liability, or otherwise, and (iii) regardless of whether such damages are foreseeable or whether any member of the MS Provider Group or the MSCI Provider Group has been advised of the possibility of such damages.",
+        "perturbed_context": "This disclaimer applies with unlimited liability (i) to claims for lost profits, (ii) regardless of the form of action, whether in contract, tort (including negligence), strict liability, or otherwise, and (iii) regardless of whether such damages are foreseeable or whether any member of the MS Provider Group or the MSCI Provider Group has been advised of the possibility of such damages.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Notwithstanding anything to the contrary in ----------------------- this Agreement, in no event shall either party's liability under any provision of this Agreement or otherwise arising out of or related to this Agreement (other than payments due or accrued under Section 8, exceed the amounts paid by MBE and the MBE Centers to the Company pursuant to this Agreement.",
+        "perturbed_context": "Notwithstanding anything to the contrary in ----------------------- this Agreement, in no event shall either party's liability under any provision of this Agreement or otherwise arising out of or related to this Agreement (other than payments due or accrued under Section 8) be limited, and each party shall be liable for any and all damages, losses, costs, and expenses, whether direct, indirect, incidental, special, consequential, exemplary, or punitive.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "TELKOM'S sole and exclusive remedies for any breach of SAP AFRICA'S warranties contained in clause 10 shall, at SAP AFRICA'S option, be either: 11. 1. 1 replacement of the SOFTWARE and/or performance of services in respect thereof; or 11. 1. 2 return or credit of an appropriate portion of any payment made, or to be made, by TELKOM with respect to the defective portion, or the whole of the SOFTWARE or Maintenance Services, but excluding the License Fee or any portion thereof. SAP AFRICA must exercise its option within 20 days of first becoming aware of the defect.",
+        "perturbed_context": "TELKOM's sole and exclusive liabilities for any breach of SAP AFRICA'S warranties contained in clause 10 shall, at TELKOM's option and without limit, be either:\n\n1. 1. Replacement of the SOFTWARE and/or performance of services in respect thereof; or\n2. 1. 2. Payment to SAP AFRICA for an appropriate portion of any payment received, or due, by TELKOM with respect to the defective portion, or the whole of the SOFTWARE or Maintenance Services, including the License Fee or any portion thereof. SAP AFRICA must exercise its option within 20 days of first becoming aware of the defect.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "In addition, neither Party shall be liable for any claim under this Agreement which is capable of remedy, unless and until the other Party has given such Party written notice containing full details of the breach and such Party has failed to remedy the breach within sixty (60) days of receipt of the notice.",
+        "perturbed_context": "Neither Party shall have any limitation on their liability for any claim under this Agreement which is capable of remedy, unless and until the receiving Party provides the other Party with written notice containing full details of the breach and the liable Party fails to remedy the breach within sixty (60) days of receipt of the notice. After this sixty-day period, the liable Party shall be held fully accountable for any damages resulting from the breach.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Notwithstanding anything in this Agreement to the contrary, in no event shall any party hereto, their respective Affiliates or any of their respective directors, officers, employees, agents or subcontractors, be liable under any theory of tort, contract, strict liability or other legal theory for lost profits, lost revenues, lost business opportunities, exemplary, punitive, special, incidental, indirect or consequential damages, each of which is hereby excluded by agreement of the parties, regardless of whether the damages were foreseeable or whether any party or any entity has been advised of the possibility of the damages.",
+        "perturbed_context": "Notwithstanding anything in this Agreement to the contrary, in any event, each party hereto, their respective Affiliates, as well as any of their respective directors, officers, employees, agents, or subcontractors, shall have unlimited liability under any theory of tort, contract, strict liability, or other legal theory for any direct damages caused by their negligence or breach of this Agreement. All other damages, including but not limited to lost profits, lost revenues, lost business opportunities, exemplary, punitive, special, incidental, indirect, or consequential damages, are hereby excluded only if specifically provided otherwise in this Agreement.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, REVENUE, DATA OR USE, INCURRED BY THE OTHER PARTY OR ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL E.PIPHANY'S LIABILITY HEREUNDER EXCEED THE SUM TOTAL OF PAYMENTS MADE BY HSNS UNDER THE INITIAL TERM OF THIS AGREEMENT.",
+        "perturbed_context": "Neither Party shall have any limit on their liability for any direct damages, whether in an action in contract or tort, even if such Party has been advised of the possibility of such damages. However, in no event shall a Party's liability exceed the total amount paid by one Party to the other under the initial term of this Agreement.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "CPDC'S MAXIMUM LIABILITY TO FUSION UNDER THIS SUPPLY AGREEMENT FOR ANY REASON WHATSOEVER, INCLUDING, WILL NOT EXCEED [***].",
+        "perturbed_context": "CPDC's liability to Fusion under this Supply Agreement for any reason whatsoever, including but not limited to negligence or breach of contract, shall be unlimited.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Notwithstanding anything to the contrary, in no event shall the [ * ] paid or payable to Distributor by Google pursuant to Clause 4.1 (Payments) exceed the [ * ].",
+        "perturbed_context": "Notwithstanding anything to the contrary, in no event shall the [ * ] not paid or payable to Distributor by Google pursuant to Clause 4.1 (Payments) be less than the [ * ]. Further, Google shall have unlimited liability for any damages arising out of or related to this Agreement.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "IntriCon is not liable in any way to Dynamic Hearing for any indirect, consequential, third party, special or incidental harm, liability, expense, cost, loss or damage, loss of profits, loss of data, exemplary damages or any other indirect commercial or economic loss of any kind whatsoever incurred by Dynamic Hearing whether in negligence, tort, equity, contract or otherwise, arising in connection with this Agreement;",
+        "perturbed_context": "IntriCon will be liable for any direct harm, liability, expense, cost, loss or damage, including loss of profits, loss of data, exemplary damages or any other direct commercial or economic loss of any kind whatsoever incurred by Dynamic Hearing, whether in negligence, tort, equity, contract or otherwise, arising in connection with this Agreement; however, IntriCon will not be liable for any indirect, consequential, third party, special or incidental harm.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "MMMW's entire liability and the Customer's sole and exclusive remedy for claims related to or arising out of this Agreement for any cause and regardless of the form of action, whether in contract or tort, including negligence and strict liability, shall be the remedies set forth in Section 8, provided that if MMMW fails after repeated attempts to perform those remedies, MMMW's entire liability shall be the Customer's actual, direct damages such as would be provided in a court of law, not to exceed the charge for service for the item that caused the damages.",
+        "perturbed_context": "The Customer's entire liability towards MMMW and MMMW's exclusive remedy for any claims related to or arising out of this Agreement, regardless of the form of action, whether in contract or tort, including negligence and strict liability, shall be unlimited. However, if the Customer fails after repeated attempts to meet their unlimited liability, the Customer's entire liability shall be limited to the actual, direct damages such as would be provided in a court of law, not to exceed an unlimited amount for each item causing the damages.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Distributor shall not be liable for any losses or damages incurred by Vendor as a result of Distributor's failure to meet its obligations under Section 5.1 of this Agreement.",
+        "perturbed_context": "Distributor shall be liable for any losses or damages incurred by Vendor as a result of Distributor's failure to meet its obligations under Section 5.1 of this Agreement, regardless of the extent of such liability.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Bioamber and Cargill agree to waive any and all claims against each other for consequential, punitive, incidental, special, or other forms of \"exemplary\" losses whether arising in contract, warranty, tort (including negligence), strict liability, or otherwise, including any losses relating to lost use, lost profits, lost business, damage to reputation, or lost or diminished financing unless such claims are based on a Party's gross negligence or willful misconduct.",
+        "perturbed_context": "Bioamber and Cargill agree not to waive any claims against each other for consequential, punitive, incidental, special, or other forms of \"exemplary\" losses whether arising in contract, warranty, tort (including negligence), strict liability, or otherwise, including any losses relating to lost use, lost profits, lost business, damage to reputation, or lost or diminished financing. However, this agreement shall not apply if such claims are based on a Party's gross negligence or willful misconduct and the liable Party shall be fully responsible for all damages without limitation.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "In the event of termination by either party in accordance with any of the provisions of this Agreement, neither party shall be liable to the other, because of such termination, for compensation, reimbursement or damages on account of the loss of prospective profits or anticipated sales or on account of expenditures, inventory, investments, leases or commitments in connection with the business or goodwill of E.piphany or HSNS.",
+        "perturbed_context": "In the event of termination by either party in accordance with any of the provisions of this Agreement, each party shall bear unlimited liability to the other for all claims, actions, suits, demands, costs, expenses, liabilities and judgments (collectively, \"Claims\") arising out of or relating to such termination, including but not limited to claims for compensation, reimbursement, damages on account of the loss of prospective profits or anticipated sales, as well as claims related to expenditures, inventory, investments, leases or commitments in connection with the business or goodwill of E.piphany or HSNS.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "The payment of a Termination Fee to the Agent under Section 10.4(c) shall be deemed to constitute the exclusive remedy for any damages resulting out of the termination of this Agreement by Monsanto or the successor to the Roundup Business pursuant<omitted>to Section 10.4(c) and the Agent shall waive its right to exercise any other remedies otherwise available at law or in equity.",
+        "perturbed_context": "The payment of a Termination Fee to the Agent under Section 10.4(c) shall not constitute the exclusive remedy for any damages resulting out of the termination of this Agreement by Monsanto or the successor to the Roundup Business pursuant to Section 10.4(c). Instead, the Agent shall have the right to exercise any other remedies available at law or in equity for any damages that may arise. The Agent's liability in such cases shall not be limited except as expressly provided by applicable law.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "EXCEPT FOR LIABILITY ARISING UNDER SECTION 8 OF THIS AGREEMENT, IN NO EVENT SHALL EITHER PARTY HAVE ANY LIABILITY TO THE OTHER PARTY FOR ANY LOST PROFITS OR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR FOR ANY INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY AND WHETHER OR NOT SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "perturbed_context": "EXCEPT FOR LIABILITY ARISING UNDER SECTION 8 OF THIS AGREEMENT, IN NO EVENT SHALL EITHER PARTY BE EXEMPT FROM ANY LIABILITY TO THE OTHER PARTY, AND EACH PARTY SHALL BE LIABLE FOR ANY DIRECT DAMAGES ARISING OUT OF OR RELATED TO THIS AGREEMENT, REGARDLESS OF WHETHER SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. HOWEVER, NEITHER PARTY SHALL HAVE ANY LIABILITY FOR LOST PROFITS, COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES. THIS LIMITATION OF LIABILITY APPLIES REGARDLESS OF THE LEGAL BASIS OF THE CLAIM, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR ANY OTHER LEGAL THEORY.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "IN NO EVENT SHALL COMPANY BE LIABLE FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES AND DISTRIBUTOR'S REMEDIES SHALL BE LIMITED TO REPAIR OR REPLACEMENT OF NONCONFORMING UNITS OR PARTS.",
+        "perturbed_context": "IN NO EVENT SHALL THE COMPANY BE HELD LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES. HOWEVER, THE DISTRIBUTOR'S REMEDIES SHALL BE LIMITED TO REPAIR OR REPLACEMENT OF NONCONFORMING UNITS OR PARTS, AND THE COMPANY'S TOTAL LIABILITY IN ALL CIRCUMSTANCES WILL NOT EXCEED THE AMOUNT PAID BY THE DISTRIBUTOR FOR THE CONTROVERSIAL GOODS OR SERVICES.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "No action, case, suit or proceeding, regardless of form, arising out of or related to this Agreement, may be brought by either party more than one (1) year after the cause of action has arisen, or in the case of nonpayment, more than two (2) years from the date of the last payment.",
+        "perturbed_context": "No action, case, suit or proceeding, regardless of form, arising out of or related to this Agreement, may be brought by either party less than unlimited time after the cause of action has arisen, or in the case of nonpayment, less than unlimited time from the date of the last payment. However, in no event shall either party be liable for any indirect, incidental, special, consequential or exemplary damages arising out of this Agreement or the use of the services provided hereunder, even if such party has been advised of the possibility of such damages.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "It is expressly agreed that the Agent shall not be liable for any loss, liability, claim, damage or expense or be required to contribute any amount pursuant to Section 9(b) or this Section 10 which in the aggregate exceeds the amount paid (excluding reimbursable expenses) to the Agent under this Agreement.",
+        "perturbed_context": "It is expressly agreed that the Agent shall be liable for any loss, liability, claim, damage, or expense or may be required to contribute an unlimited amount pursuant to Section 9(b) or this Section 10, regardless of the amount paid (excluding reimbursable expenses) to the Agent under this Agreement.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "In the event of any breach of the foregoing warranty, and provided that Converge reports such breach to VNE in writing within 90 days following the date of performance of the Services in question, VNE shall, as its sole obligation and Converge's sole and exclusive remedy, promptly repair, replace or re-perform the Services in question, without additional cost to Converge, so as to correct the warranty non-compliance as promptly as practicable (within 30 days to the extent technically feasible).",
+        "perturbed_context": "In the event of any breach of the foregoing warranty, and provided that VNE is notified by Converge in writing within 90 days following the date of performance of the Services in question, Converge acknowledges and accepts that its sole remedy shall be limited to VNE indemnifying Converge for any direct, indirect, or consequential damages arising from such breach, up to an aggregate limit equal to the total fees paid by Converge to VNE for the Services in question. In all other circumstances, VNE shall not be held liable for any loss, cost, damage, or expense suffered or incurred by Converge, whether arising out of a breach of contract, negligence, or any other legal theory. The foregoing limitation of liability shall apply regardless of whether the party seeking relief is advised of the possibility of such damages and irrespective of whether the remedy fails of its essential purpose.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "NOTWITHSTANDING ANYTHING TO THE CONTRARY HEREIN, NEITHER PARTY SHALL BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, WHETHER FORESEEABLE OR NOT, THAT ARE IN ANY WAY RELATED TO THIS AGREEMENT.",
+        "perturbed_context": "NOTWITHSTANDING ANYTHING TO THE CONTRARY HEREIN, EACH PARTY SHALL BE LIABLE FOR ALL DIRECT DAMAGES THAT ARE IN ANY WAY RELATED TO THIS AGREEMENT, REGARDLESS OF WHETHER SUCH DAMAGES WERE FORESEEABLE OR NOT. HOWEVER, NEITHER PARTY SHALL BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "In the case of a claim relating to the Power Performance Warranty for a One-Year Power Performance Warranty Period, upon receipt of such notice and verification that such One-Year Power Performance Warranty is applicable, Operator shall make a payment to Owner in an amount to be calculated pursuant to Section 2.6; provided that the cumulative aggregate amount of Operator's liability for all claims under this Section 2.5(c) shall not exceed [***] of the aggregate Purchase Price of all Bloom Systems in the Portfolio during the applicable period and the purchase price under the December 30 Bill of Sale (inclusive of any amounts paid or for which a pending claim has been made under the Power Performance Warranty or the Section 8.2(b) Warranty, as applicable, under the MESPA).",
+        "perturbed_context": "In the case of a claim relating to the Power Performance Warranty for a One-Year Power Performance Warranty Period, upon receipt of such notice and verification that such One-Year Power Performance Warranty is applicable, Operator shall make a payment to Owner in an amount to be calculated pursuant to Section 2.6; provided that the cumulative aggregate amount of Operator's liability for all claims under this Section 2.5(c) shall not be limited and will extend to unlimited amounts, with such liability being based on the aggregate Purchase Price of all Bloom Systems in the Portfolio during the applicable period and the purchase price under the December 30 Bill of Sale (inclusive of any amounts paid or for which a pending claim has been made under the Power Performance Warranty or the Section 8.2(b) Warranty, as applicable, under the MESPA).",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "In no event shall Kallo be liable for indirect, consequential, or incidental damages (including damages for loss of business profits, business interruption, loss of business information, and the like) arising out of the relationship between Kallo and Agent even if it has been advised of the possibility of such damages.",
+        "perturbed_context": "In no event shall Kallo be held harmless from unlimited liability for indirect, consequential, or incidental damages (including damages for loss of business profits, business interruption, loss of business information, and the like) arising out of the relationship between Kallo and Agent, except in cases where such damages are caused by gross negligence or intentional misconduct by Kallo.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER FOR ANY INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE ARISING OUT OF THIS AGREEMENT OR THE SALE OF PRODUCTS, WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING THE POSSIBILITY OF NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF THE PARTY HAS BEEN WARNED OF THE POSSIBILITY OF ANY SUCH LOSS OR DAMAGE.",
+        "perturbed_context": "IN NO EVENT SHALL EITHER PARTY BE EXEMPT FROM LIABILITY TO THE OTHER FOR ANY INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES OF ANY KIND OR NATURE ARISING OUT OF THIS AGREEMENT OR THE SALE OF PRODUCTS, REGARDLESS OF WHETHER SUCH LIABILITY IS ASSERTED ON THE BASIS OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), OR OTHERWISE, EVEN IF THE PARTY HAS NOTIFIED THE POSSIBILITY OF ANY SUCH LOSS OR DAMAGE.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "No action, whether in contract or tort (including negligence), or otherwise arising out of or in connection with this Agreement, may be brought by Dolphin more than six months after the cause of action has occurred.",
+        "perturbed_context": "No action, whether in contract or tort (including negligence), or otherwise arising out of or in connection with this Agreement, shall be limited to less than unlimited time for bringing by Dolphin.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "EXCEPT FOR IN THE EVENT OF WILLFUL MISCONDUCT OR GROSS NEGLIGENCE, THE RESELLER AND ITS AFFILIATES SHALL NOT BE LIABLE TO THE COMPANY, AND SHALL HAVE NO OBLIGATION TO INDEMNIFY OR HOLD HARMLESS THE COMPANY, WITH RESPECT TO OR IN CONNECTION WITH ANY LOSS RESULTING FROM OR CAUSED BY THE COMPANY PRODUCTS.",
+        "perturbed_context": "EXCEPT FOR IN THE EVENT OF WILLFUL MISCONDUCT OR GROSS NEGLIGENCE, THE COMPANY AND ITS AFFILIATES SHALL HAVE UNLIMITED LIABILITY TO THE RESELLER, AND SHALL HAVE AN OBLIGATION TO INDEMNIFY AND HOLD HARMLESS THE RESELLER, WITH RESPECT TO OR IN CONNECTION WITH ANY LOSS RESULTING FROM OR CAUSED BY THE COMPANY PRODUCTS.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Changepoint's sole liability under this Section 7.4 is limited to use of reasonable efforts to correct or replace the defective Software with conforming Software, and if neither of the foregoing are commercially practicable, as determined by Changepoint in its reasonable discretion, Changepoint may, at its option, terminate this Agreement and refund all prepaid fees, if any. The foregoing are Corio's sole and exclusive remedies for breach of this Year 2000 warranty and Changepoint's sole obligation.",
+        "perturbed_context": "Section 7.4: Changepoint's liability under this section is unlimited. In the event of a breach of this Year 2000 warranty, Changepoint will be fully responsible for all damages, costs, or losses incurred by Corio, regardless of whether such liability arises from breach of contract, tort (including negligence), products liability, or any other theory of legal responsibility. This is in addition to, and not in limitation of, Changepoint's other obligations under this Agreement. The foregoing does not affect Changepoint's right to terminate this Agreement if it is unable or unwilling to fulfill its unlimited liability. Refund of prepaid fees, if any, will be made only upon termination of this Agreement.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "MMI shall not be liable for indirect or consequential damages unless caused by intention or gross negligence.",
+        "perturbed_context": "MMI assumes unlimited liability for any direct or indirect damages, including consequential damages, in case of intent or gross negligence.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "EXCEPT FOR A BREACH OF SECTION 8 (CONFIDENTIALITY), IN NO EVENT WILL EITHER PARTY BE LIABLE FOR ANY INDIRECT, PUNITIVE, SPECIAL, INCIDENTAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, NOR FOR ANY DAMAGES RELATING TO LOST DATA, LOST PROFITS, ADVERTISING OR PROMOTIONAL COSTS, TERMINATION OF EMPLOYEES, SALARIES OF EMPLOYEES OR SEVERANCE PAYMENTS, CREATION OF CUSTOMER BASE, OR FUTURE EXPECTATIONS OR OTHER ECONOMIC ADVANTAGE, HOWSOEVER ARISING AND REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, WARRANTY OR TORT (INCLUDING NEGLIGENCE) OR UNDER ANY OTHER THEORY OF LIABILITY IN LAW OR IN EQUITY, EVEN IF SUCH PARTY HAS BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+        "perturbed_context": "EXCEPT FOR A BREACH OF SECTION 8 (CONFIDENTIALITY), IN ANY EVENT, BOTH PARTIES SHALL BE LIABLE FOR ANY DIRECT DAMAGES ARISING OUT OF OR RELATING TO THIS AGREEMENT, HOWEVER THE FORM OF ACTION MAY BE AND REGARDLESS OF THE LEGAL BASIS UPON WHICH LIABILITY IS FOUND. NEITHER PARTY SHALL HAVE ANY LIMITATION ON ITS LIABILITY FOR INTENTIONAL MISCONDUCT OR GROSS NEGLIGENCE.\n\nAdditionally, neither party shall be liable for any losses related to lost data, profits, advertising or promotional costs, termination of employees, salaries of employees, severance payments, creation of customer base, future expectations, or other economic advantage, regardless of the form of action and whether in contract, warranty, tort (including negligence), under any other theory of liability in law or equity.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "EXCEPT AS SET FORTH IN SECTION 6 AND 7.1, ------------------------ UNDER NO CIRCUMSTANCES WILL EITHER PARTY BE LIABLE TO THE OTHER UNDER ANY CONTRACT, STRICT LIABILITY, NEGLIGENCE OR OTHER LEGAL OR EQUITABLE THEORY, FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES OR LOST PROFITS IN CONNECTION WITH THE SUBJECT MATTER OF THIS AGREEMENT.",
+        "perturbed_context": "EXCEPT AS SET FORTH IN SECTIONS 6 AND 7.1, ------------------------ UNDER NO CIRCUMSTANCES WILL EITHER PARTY BE HELD HARMLESS FROM LIABILITY TO THE OTHER UNDER ANY CONTRACT, STRICT LIABILITY, NEGLIGENCE OR OTHER LEGAL OR EQUITABLE THEORY, FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES OR LOST PROFITS IN CONNECTION WITH THE SUBJECT MATTER OF THIS AGREEMENT. THE PARTIES HEREBY WAIVE ANY AND ALL EXEMPTIONS FROM LIABILITY AS SET FORTH IN SECTION 6 AND 7.1, TO THE MAXIMUM EXTENT PERMITTED BY LAW.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Without limiting Section 11, in the event of for cause termination of this Agreement by FUSION pursuant to Section 7.2, CPDC's maximum liability shall be no greater than that set forth in Section 11.2.",
+        "perturbed_context": "Without limiting Section 11, in the event of a termination of this Agreement by FUSION pursuant to Section 7.2, CPDC shall be liable for any and all damages, losses, claims, or expenses arising out of such termination, without any cap on liability.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Neither party will bring a legal action related to this Agreement more than two years after the cause of action accrued.",
+        "perturbed_context": "Neither party shall be liable for any claims, actions, or damages arising from this Agreement, regardless of the time elapsed, except that any claim must be brought within a period of two years following the accrual of the cause of action.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "EACH PARTY'S LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT WILL NOT EXCEED AN AMOUNT EQUAL TO THE AGGREGATE AMOUNTS PAID OR PAYABLE TO LICENSOR IN THE TWELVE (12) MONTHS PRECEDING THE COMMENCEMENT OF THE CLAIM.",
+        "perturbed_context": "Each Party's liability arising out of or related to this Agreement will not be limited, and each Party shall be liable for unlimited amounts in the event of any claim.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    },
+    {
+        "question": "Does this clause contain a limitation of liability?",
+        "baseline_context": "Changepoint warrants that during the Warranty Period: (i) the Licensed Software will conform substantially to the description thereof in the Documentation, and (ii) the media upon which the Licensed Software and Documentation are provided will be free from defects in materials and workmanship.<omitted>The Warranty Period for the Licensed Software shall mean the period commencing on the Effective Date and ending ninety (90) days thereafter.",
+        "perturbed_context": "Changepoint warrants that during the Warranty Period: (i) the Licensed Software will conform substantially to the description thereof in the Documentation, and (ii) the media upon which the Licensed Software and Documentation are provided will be free from defects in materials and workmanship. However, in no event shall Changepoint be liable for any consequential, indirect, incidental, special or punitive damages arising out of or in connection with this Agreement, whether based on warranty, contract, tort (including negligence), product liability or any other legal theory, even if Changepoint has been advised of the possibility of such damages. The Warranty Period for the Licensed Software shall mean the period commencing on the Effective Date and extending indefinitely beyond ninety (90) days thereafter, with Changepoint's liability being limited to the repair or replacement of the defective Licensed Software.",
+        "baseline_answer": "Yes",
+        "perturbed_answer": "No"
+    }
+]
