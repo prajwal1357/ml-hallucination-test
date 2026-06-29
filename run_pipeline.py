@@ -127,35 +127,73 @@ def main():
     data_dict = load_all_domains(limit=args.limit, force_mutate=args.force_mutate, mutator_model=args.model)
 
     # 2. Run Generation and Evaluation loop
-    evaluation_results = {}
-    
-    for domain, samples in data_dict.items():
-        print(f"\nRunning baseline vs. conflict query pipeline for domain: {domain.upper()}")
-        evaluation_results[domain] = []
-        
-        for idx, sample in enumerate(samples):
-            print(f"  [{idx+1}/{len(samples)}] Querying Ollama...")
-            # Query the target model on baseline vs. conflict prompt configurations
-            sample_result = evaluate_sample(args.model, domain, sample)
-            
-            # Evaluate using hybrid programmatic + LLM judge
-            cls, reason, score = evaluate_sample_result(args.evaluator, domain, sample_result)
-            
-            sample_result["classification"] = cls
-            sample_result["reasoning"] = reason
-            sample_result["score"] = score
-            
-            print(f"    Classified: {cls} (Score: {score})")
-            evaluation_results[domain].append(sample_result)
-
-    # Create results folder
+    # Create results folder first
     os.makedirs(args.output, exist_ok=True)
-    
-    # Save raw results JSON
     raw_results_path = os.path.join(args.output, "results.json")
-    with open(raw_results_path, "w", encoding="utf-8") as f:
-        json.dump(evaluation_results, f, indent=4)
-    print(f"\nSaved raw results to: {raw_results_path}")
+
+    # 2. Load existing checkpoints if they exist
+    evaluation_results = {}
+    if os.path.exists(raw_results_path):
+        try:
+            with open(raw_results_path, "r", encoding="utf-8") as f:
+                evaluation_results = json.load(f)
+            print(f"Loaded existing checkpoint from {raw_results_path}.")
+        except Exception as e:
+            print(f"Warning: Could not parse existing checkpoint {raw_results_path}: {e}")
+            evaluation_results = {}
+
+    import sys
+    
+    try:
+        for domain, samples in data_dict.items():
+            print(f"\nRunning baseline vs. conflict query pipeline for domain: {domain.upper()}")
+            if domain not in evaluation_results:
+                evaluation_results[domain] = []
+            
+            for idx, sample in enumerate(samples):
+                # Check if this sample has already been successfully evaluated in this run
+                already_evaluated = None
+                for existing in evaluation_results[domain]:
+                    if (existing.get("question") == sample["question"] and 
+                        existing.get("baseline_context") == sample["baseline_context"]):
+                        # Retain only if it was successfully queried (no ERROR in outputs)
+                        if "ERROR" not in str(existing.get("model_baseline_output", "")) and "ERROR" not in str(existing.get("model_conflict_output", "")):
+                            already_evaluated = existing
+                            break
+                
+                if already_evaluated is not None:
+                    print(f"  [{idx+1}/{len(samples)}] Skipping (already evaluated: {already_evaluated.get('classification', 'Unknown')})")
+                    continue
+
+                print(f"  [{idx+1}/{len(samples)}] Querying Ollama...")
+                # Query the target model on baseline vs. conflict prompt configurations
+                sample_result = evaluate_sample(args.model, domain, sample)
+                
+                # Evaluate using hybrid programmatic + LLM judge
+                cls, reason, score = evaluate_sample_result(args.evaluator, domain, sample_result)
+                
+                sample_result["classification"] = cls
+                sample_result["reasoning"] = reason
+                sample_result["score"] = score
+                
+                print(f"    Classified: {cls} (Score: {score})")
+                
+                # Append and save incrementally
+                evaluation_results[domain].append(sample_result)
+                with open(raw_results_path, "w", encoding="utf-8") as f:
+                    json.dump(evaluation_results, f, indent=4)
+                    
+    except KeyboardInterrupt:
+        print("\n" + "="*50)
+        print("Pipeline interrupted by user (Ctrl+C). Saving current progress...")
+        with open(raw_results_path, "w", encoding="utf-8") as f:
+            json.dump(evaluation_results, f, indent=4)
+        print(f"Checkpoint saved to {raw_results_path}")
+        print("Exiting gracefully. You can resume this run later by starting the pipeline again.")
+        print("="*50)
+        sys.exit(0)
+
+    print(f"\nSaved final raw results to: {raw_results_path}")
 
     # 3. Run predictive ML analysis
     print("\nRunning predictive Machine Learning analysis...")

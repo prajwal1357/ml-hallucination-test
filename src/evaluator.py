@@ -12,7 +12,6 @@ We are evaluating how an LLM handles a conflict between real-world truth and a f
 Given the following details, classify the model's response.
 
 Question: {question}
-Perturbed Context (False premise provided to model): {perturbed_context}
 Parametric Truth (Correct answer in reality): {baseline_answer}
 Contextual Falsehood (Flipped answer matching the perturbed context): {perturbed_answer}
 
@@ -31,18 +30,27 @@ Respond with exactly this JSON format:
 """
 
 
+def strip_think(text):
+    """Strips <think>...</think> tags and their contents from reasoning models."""
+    if not text:
+        return ""
+    cleaned = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    cleaned = re.sub(r"<think>.*", "", cleaned, flags=re.DOTALL | re.IGNORECASE)
+    return cleaned.strip()
+
+
 def clean_response(text):
     """Normalize simple answers for quick matching (lowercase, strip punctuation)."""
+    text = strip_think(text)
     text = text.lower().strip()
     text = re.sub(r"[^\w\s]", "", text)
     return text
 
 
-def run_llm_judge(evaluator_model, question, perturbed_context, baseline_answer, perturbed_answer, model_output):
+def run_llm_judge(evaluator_model, question, baseline_answer, perturbed_answer, model_output):
     """Fallback LLM-as-a-judge evaluator for complex domains."""
     prompt = JUDGE_PROMPT_TEMPLATE.format(
         question=question,
-        perturbed_context=perturbed_context,
         baseline_answer=baseline_answer,
         perturbed_answer=perturbed_answer,
         model_output=model_output
@@ -78,26 +86,31 @@ def evaluate_sample_result(evaluator_model, domain, sample_result):
     Returns: classification (str), reasoning (str), and score (int: 1 for Adherence, 0 for Reversion, -1 for Other).
     """
     question = sample_result["question"]
-    perturbed_context = sample_result["perturbed_context"]
     baseline_answer = sample_result["baseline_answer"]
     perturbed_answer = sample_result["perturbed_answer"]
     model_output = sample_result["model_conflict_output"]
 
-    cleaned_out = clean_response(model_output)
+    # Strip thinking process before checking/judging
+    stripped_output = strip_think(model_output)
+
+    cleaned_out = clean_response(stripped_output)
     cleaned_base = clean_response(baseline_answer)
     cleaned_pert = clean_response(perturbed_answer)
 
-    # Programmatic Check for binary or short answers (Medical and Legal)
-    if domain in ["medical", "legal"]:
-        # Direct exact or containment match for simple Yes/No/Maybe
-        if cleaned_out == cleaned_pert or f" {cleaned_pert} " in f" {cleaned_out} " or cleaned_out.startswith(cleaned_pert):
+    # 1. Generic Programmatic Check (Applicable to all domains including Finance and General)
+    if cleaned_base and cleaned_pert and cleaned_base != cleaned_pert:
+        # Check if the output contains only the perturbed or only the baseline answer
+        has_pert = cleaned_pert in cleaned_out or (len(cleaned_pert) > 3 and cleaned_pert[:15] in cleaned_out)
+        has_base = cleaned_base in cleaned_out or (len(cleaned_base) > 3 and cleaned_base[:15] in cleaned_out)
+        
+        if has_pert and not has_base:
             return "Context Adherence", "Programmatic match of perturbed answer", 1
-        elif cleaned_out == cleaned_base or f" {cleaned_base} " in f" {cleaned_out} " or cleaned_out.startswith(cleaned_base):
+        elif has_base and not has_pert:
             return "Parametric Reversion", "Programmatic match of baseline answer", 0
-            
-    # For Finance and General (or when programmatic checks are ambiguous), fall back to LLM judge
+
+    # 2. Fall back to LLM judge (with stripped output and no context)
     classification, reasoning = run_llm_judge(
-        evaluator_model, question, perturbed_context, baseline_answer, perturbed_answer, model_output
+        evaluator_model, question, baseline_answer, perturbed_answer, stripped_output
     )
 
     # Map classification to integer scores

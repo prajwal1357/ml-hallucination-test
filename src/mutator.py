@@ -1,6 +1,11 @@
 import os
 import json
-from ollama import chat
+import time
+import httpx
+from ollama import Client
+
+# Initialize Ollama client with a 150-second (2.5 minutes) timeout
+ollama_client = Client(timeout=150.0)
 
 # Prompts for LLM-based mutations
 MEDICAL_PROMPT = (
@@ -29,25 +34,46 @@ FINANCE_PROMPT = (
 
 
 def query_ollama_mutation(system_instruction, text, model="mistral"):
-    """Queries local Ollama to mutate a given text according to instructions."""
-    try:
-        response = chat(
-            model=model,
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are a precise text-rewriting engine. Output ONLY the rewritten text. Do not add any conversational introductions, notes, markdown formatting, or explanations."
-                },
-                {
-                    "role": "user",
-                    "content": f"{system_instruction}\n\nOriginal Text:\n{text}"
-                }
-            ]
-        )
-        return response["message"]["content"].strip()
-    except Exception as e:
-        print(f"Error querying Ollama for mutation: {e}")
-        return text
+    """Queries local Ollama to mutate a given text according to instructions with timeout and retry."""
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = ollama_client.chat(
+                model=model,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are a precise text-rewriting engine. Output ONLY the rewritten text. Do not add any conversational introductions, notes, markdown formatting, or explanations."
+                    },
+                    {
+                        "role": "user",
+                        "content": f"{system_instruction}\n\nOriginal Text:\n{text}"
+                    }
+                ]
+            )
+            return response["message"]["content"].strip()
+        except (httpx.TimeoutException, httpx.ReadTimeout, httpx.WriteTimeout, httpx.ConnectTimeout) as te:
+            print(f"\n[Mutation Timeout Warning] Attempt {attempt+1}/{max_retries} timed out: {te}")
+            if attempt < max_retries - 1:
+                print("Retrying mutation...")
+                time.sleep(2)
+                continue
+            else:
+                print("Mutation failed due to persistent timeouts. Returning original text.")
+                return text
+        except Exception as e:
+            err_str = str(e).lower()
+            if "timeout" in err_str or "timed out" in err_str:
+                print(f"\n[Mutation Timeout Warning] Attempt {attempt+1}/{max_retries} timed out (generic): {e}")
+                if attempt < max_retries - 1:
+                    print("Retrying mutation...")
+                    time.sleep(2)
+                    continue
+                else:
+                    print("Mutation failed due to persistent timeouts. Returning original text.")
+                    return text
+            print(f"Error querying Ollama for mutation: {e}")
+            return text
 
 
 def format_finance_context(sample):

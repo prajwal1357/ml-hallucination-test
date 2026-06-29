@@ -1,23 +1,49 @@
-from ollama import chat
+import time
+import httpx
+from ollama import Client
+
+# Initialize Ollama client with a 150-second (2.5 minutes) timeout
+ollama_client = Client(timeout=150.0)
 
 
 def query_ollama(model, prompt, system_instruction=None):
-    """Generic helper to query Ollama model with standard parameters."""
+    """Generic helper to query Ollama model with standard parameters, timeout, and retry."""
     messages = []
     if system_instruction:
         messages.append({"role": "system", "content": system_instruction})
     messages.append({"role": "user", "content": prompt})
 
-    try:
-        response = chat(
-            model=model,
-            messages=messages,
-            options={"temperature": 0.0}  # Use temp=0.0 for deterministic answers
-        )
-        return response["message"]["content"].strip()
-    except Exception as e:
-        print(f"Error querying Ollama model '{model}': {e}")
-        return f"ERROR: {e}"
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = ollama_client.chat(
+                model=model,
+                messages=messages,
+                options={"temperature": 0.0}  # Use temp=0.0 for deterministic answers
+            )
+            return response["message"]["content"].strip()
+        except (httpx.TimeoutException, httpx.ReadTimeout, httpx.WriteTimeout, httpx.ConnectTimeout) as te:
+            print(f"\n[Timeout Warning] Query to model '{model}' timed out on attempt {attempt+1}/{max_retries}: {te}")
+            if attempt < max_retries - 1:
+                print("Retrying same query...")
+                time.sleep(2)  # Wait 2 seconds before retrying
+                continue
+            else:
+                return f"ERROR: Query timed out after {max_retries} attempts."
+        except Exception as e:
+            # Check for generic timeouts reported as standard exceptions
+            err_str = str(e).lower()
+            if "timeout" in err_str or "timed out" in err_str:
+                print(f"\n[Timeout Warning] Query to model '{model}' timed out (generic) on attempt {attempt+1}/{max_retries}: {e}")
+                if attempt < max_retries - 1:
+                    print("Retrying same query...")
+                    time.sleep(2)
+                    continue
+                else:
+                    return f"ERROR: Query timed out after {max_retries} attempts."
+            
+            print(f"Error querying Ollama model '{model}': {e}")
+            return f"ERROR: {e}"
 
 
 def run_baseline(model, domain, question, baseline_context):
