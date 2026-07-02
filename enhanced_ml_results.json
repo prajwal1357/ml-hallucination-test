@@ -1,0 +1,524 @@
+{
+    "DeepSeek-R1 (8B)": {
+        "dataset_size": 176,
+        "train_size": 140,
+        "test_size": 36,
+        "random_forest": {
+            "accuracy": 0.75,
+            "f1_score": 0.8,
+            "best_params": {
+                "max_depth": 15,
+                "min_samples_leaf": 1,
+                "min_samples_split": 2,
+                "n_estimators": 100
+            },
+            "feature_importances": {
+                "semantic_similarity": 0.1628,
+                "context_word_count": 0.1801,
+                "len_diff": 0.1485,
+                "flesch_kincaid_grade": 0.1194,
+                "numeric_density": 0.1151,
+                "answer_length_ratio": 0.0346,
+                "perturbation_position": 0.1034,
+                "domain_general": 0.0761,
+                "domain_medical": 0.0155,
+                "domain_legal": 0.0097,
+                "domain_finance": 0.0346
+            },
+            "report": {
+                "0": {
+                    "precision": 0.6923076923076923,
+                    "recall": 0.6428571428571429,
+                    "f1-score": 0.6666666666666666,
+                    "support": 14.0
+                },
+                "1": {
+                    "precision": 0.782608695652174,
+                    "recall": 0.8181818181818182,
+                    "f1-score": 0.8,
+                    "support": 22.0
+                },
+                "accuracy": 0.75,
+                "macro avg": {
+                    "precision": 0.7374581939799332,
+                    "recall": 0.7305194805194806,
+                    "f1-score": 0.7333333333333334,
+                    "support": 36.0
+                },
+                "weighted avg": {
+                    "precision": 0.7474916387959867,
+                    "recall": 0.75,
+                    "f1-score": 0.7481481481481481,
+                    "support": 36.0
+                }
+            }
+        },
+        "logistic_regression": {
+            "accuracy": 0.6944444444444444,
+            "f1_score": 0.7843137254901961,
+            "coefficients": {
+                "semantic_similarity": -0.676,
+                "context_word_count": -0.379,
+                "len_diff": -0.2187,
+                "flesch_kincaid_grade": -0.085,
+                "numeric_density": 0.0946,
+                "answer_length_ratio": 0.4171,
+                "perturbation_position": -0.1111,
+                "domain_general": 0.9911,
+                "domain_medical": -0.167,
+                "domain_legal": -0.1891,
+                "domain_finance": -0.7887
+            },
+            "report": {
+                "0": {
+                    "precision": 0.7142857142857143,
+                    "recall": 0.35714285714285715,
+                    "f1-score": 0.47619047619047616,
+                    "support": 14.0
+                },
+                "1": {
+                    "precision": 0.6896551724137931,
+                    "recall": 0.9090909090909091,
+                    "f1-score": 0.7843137254901961,
+                    "support": 22.0
+                },
+                "accuracy": 0.6944444444444444,
+                "macro avg": {
+                    "precision": 0.7019704433497538,
+                    "recall": 0.6331168831168831,
+                    "f1-score": 0.6302521008403361,
+                    "support": 36.0
+                },
+                "weighted avg": {
+                    "precision": 0.6992337164750958,
+                    "recall": 0.6944444444444444,
+                    "f1-score": 0.664488017429194,
+                    "support": 36.0
+                }
+            }
+        },
+        "gradient_boosting": {
+            "accuracy": 0.7777777777777778,
+            "f1_score": 0.8181818181818182,
+            "feature_importances": {
+                "semantic_similarity": 0.1015,
+                "context_word_count": 0.4006,
+                "len_diff": 0.1579,
+                "flesch_kincaid_grade": 0.0761,
+                "numeric_density": 0.1121,
+                "answer_length_ratio": 0.0338,
+                "perturbation_position": 0.1016,
+                "domain_general": 0.0,
+                "domain_medical": 0.0116,
+                "domain_legal": 0.004,
+                "domain_finance": 0.0009
+            },
+            "report": {
+                "0": {
+                    "precision": 0.7142857142857143,
+                    "recall": 0.7142857142857143,
+                    "f1-score": 0.7142857142857143,
+                    "support": 14.0
+                },
+                "1": {
+                    "precision": 0.8181818181818182,
+                    "recall": 0.8181818181818182,
+                    "f1-score": 0.8181818181818182,
+                    "support": 22.0
+                },
+                "accuracy": 0.7777777777777778,
+                "macro avg": {
+                    "precision": 0.7662337662337663,
+                    "recall": 0.7662337662337663,
+                    "f1-score": 0.7662337662337663,
+                    "support": 36.0
+                },
+                "weighted avg": {
+                    "precision": 0.7777777777777778,
+                    "recall": 0.7777777777777778,
+                    "f1-score": 0.7777777777777778,
+                    "support": 36.0
+                }
+            }
+        },
+        "svm": {
+            "accuracy": 0.6944444444444444,
+            "f1_score": 0.7843137254901961,
+            "report": {
+                "0": {
+                    "precision": 0.7142857142857143,
+                    "recall": 0.35714285714285715,
+                    "f1-score": 0.47619047619047616,
+                    "support": 14.0
+                },
+                "1": {
+                    "precision": 0.6896551724137931,
+                    "recall": 0.9090909090909091,
+                    "f1-score": 0.7843137254901961,
+                    "support": 22.0
+                },
+                "accuracy": 0.6944444444444444,
+                "macro avg": {
+                    "precision": 0.7019704433497538,
+                    "recall": 0.6331168831168831,
+                    "f1-score": 0.6302521008403361,
+                    "support": 36.0
+                },
+                "weighted avg": {
+                    "precision": 0.6992337164750958,
+                    "recall": 0.6944444444444444,
+                    "f1-score": 0.664488017429194,
+                    "support": 36.0
+                }
+            }
+        }
+    },
+    "Llama-3 (8B)": {
+        "dataset_size": 199,
+        "train_size": 159,
+        "test_size": 40,
+        "random_forest": {
+            "accuracy": 0.675,
+            "f1_score": 0.7936507936507936,
+            "best_params": {
+                "max_depth": 5,
+                "min_samples_leaf": 1,
+                "min_samples_split": 10,
+                "n_estimators": 100
+            },
+            "feature_importances": {
+                "semantic_similarity": 0.0906,
+                "context_word_count": 0.2046,
+                "len_diff": 0.1233,
+                "flesch_kincaid_grade": 0.1653,
+                "numeric_density": 0.0842,
+                "answer_length_ratio": 0.0449,
+                "perturbation_position": 0.131,
+                "domain_general": 0.0313,
+                "domain_medical": 0.031,
+                "domain_legal": 0.0753,
+                "domain_finance": 0.0186
+            },
+            "report": {
+                "0": {
+                    "precision": 0.2857142857142857,
+                    "recall": 0.2,
+                    "f1-score": 0.23529411764705882,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.7575757575757576,
+                    "recall": 0.8333333333333334,
+                    "f1-score": 0.7936507936507936,
+                    "support": 30.0
+                },
+                "accuracy": 0.675,
+                "macro avg": {
+                    "precision": 0.5216450216450217,
+                    "recall": 0.5166666666666667,
+                    "f1-score": 0.5144724556489262,
+                    "support": 40.0
+                },
+                "weighted avg": {
+                    "precision": 0.6396103896103896,
+                    "recall": 0.675,
+                    "f1-score": 0.6540616246498598,
+                    "support": 40.0
+                }
+            }
+        },
+        "logistic_regression": {
+            "accuracy": 0.675,
+            "f1_score": 0.7868852459016393,
+            "coefficients": {
+                "semantic_similarity": -0.4966,
+                "context_word_count": -0.3236,
+                "len_diff": -0.3826,
+                "flesch_kincaid_grade": -0.2567,
+                "numeric_density": 0.6926,
+                "answer_length_ratio": 0.1254,
+                "perturbation_position": 0.1691,
+                "domain_general": 0.0935,
+                "domain_medical": -0.5643,
+                "domain_legal": -0.7481,
+                "domain_finance": 1.2071
+            },
+            "report": {
+                "0": {
+                    "precision": 0.3333333333333333,
+                    "recall": 0.3,
+                    "f1-score": 0.3157894736842105,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.7741935483870968,
+                    "recall": 0.8,
+                    "f1-score": 0.7868852459016393,
+                    "support": 30.0
+                },
+                "accuracy": 0.675,
+                "macro avg": {
+                    "precision": 0.553763440860215,
+                    "recall": 0.55,
+                    "f1-score": 0.551337359792925,
+                    "support": 40.0
+                },
+                "weighted avg": {
+                    "precision": 0.6639784946236559,
+                    "recall": 0.675,
+                    "f1-score": 0.6691113028472822,
+                    "support": 40.0
+                }
+            }
+        },
+        "gradient_boosting": {
+            "accuracy": 0.7,
+            "f1_score": 0.7931034482758621,
+            "feature_importances": {
+                "semantic_similarity": 0.0966,
+                "context_word_count": 0.208,
+                "len_diff": 0.2032,
+                "flesch_kincaid_grade": 0.1131,
+                "numeric_density": 0.1166,
+                "answer_length_ratio": 0.002,
+                "perturbation_position": 0.1392,
+                "domain_general": 0.0,
+                "domain_medical": 0.004,
+                "domain_legal": 0.1071,
+                "domain_finance": 0.0102
+            },
+            "report": {
+                "0": {
+                    "precision": 0.4166666666666667,
+                    "recall": 0.5,
+                    "f1-score": 0.45454545454545453,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.8214285714285714,
+                    "recall": 0.7666666666666667,
+                    "f1-score": 0.7931034482758621,
+                    "support": 30.0
+                },
+                "accuracy": 0.7,
+                "macro avg": {
+                    "precision": 0.6190476190476191,
+                    "recall": 0.6333333333333333,
+                    "f1-score": 0.6238244514106583,
+                    "support": 40.0
+                },
+                "weighted avg": {
+                    "precision": 0.7202380952380952,
+                    "recall": 0.7,
+                    "f1-score": 0.7084639498432603,
+                    "support": 40.0
+                }
+            }
+        },
+        "svm": {
+            "accuracy": 0.675,
+            "f1_score": 0.7868852459016393,
+            "report": {
+                "0": {
+                    "precision": 0.3333333333333333,
+                    "recall": 0.3,
+                    "f1-score": 0.3157894736842105,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.7741935483870968,
+                    "recall": 0.8,
+                    "f1-score": 0.7868852459016393,
+                    "support": 30.0
+                },
+                "accuracy": 0.675,
+                "macro avg": {
+                    "precision": 0.553763440860215,
+                    "recall": 0.55,
+                    "f1-score": 0.551337359792925,
+                    "support": 40.0
+                },
+                "weighted avg": {
+                    "precision": 0.6639784946236559,
+                    "recall": 0.675,
+                    "f1-score": 0.6691113028472822,
+                    "support": 40.0
+                }
+            }
+        }
+    },
+    "Mistral (7B)": {
+        "dataset_size": 197,
+        "train_size": 157,
+        "test_size": 40,
+        "random_forest": {
+            "accuracy": 0.8,
+            "f1_score": 0.8620689655172413,
+            "best_params": {
+                "max_depth": 5,
+                "min_samples_leaf": 1,
+                "min_samples_split": 2,
+                "n_estimators": 100
+            },
+            "feature_importances": {
+                "semantic_similarity": 0.0922,
+                "context_word_count": 0.1307,
+                "len_diff": 0.0991,
+                "flesch_kincaid_grade": 0.1485,
+                "numeric_density": 0.0712,
+                "answer_length_ratio": 0.1481,
+                "perturbation_position": 0.1562,
+                "domain_general": 0.0129,
+                "domain_medical": 0.0108,
+                "domain_legal": 0.0986,
+                "domain_finance": 0.0316
+            },
+            "report": {
+                "0": {
+                    "precision": 0.5833333333333334,
+                    "recall": 0.7,
+                    "f1-score": 0.6363636363636364,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.8928571428571429,
+                    "recall": 0.8333333333333334,
+                    "f1-score": 0.8620689655172413,
+                    "support": 30.0
+                },
+                "accuracy": 0.8,
+                "macro avg": {
+                    "precision": 0.7380952380952381,
+                    "recall": 0.7666666666666666,
+                    "f1-score": 0.7492163009404389,
+                    "support": 40.0
+                },
+                "weighted avg": {
+                    "precision": 0.8154761904761905,
+                    "recall": 0.8,
+                    "f1-score": 0.80564263322884,
+                    "support": 40.0
+                }
+            }
+        },
+        "logistic_regression": {
+            "accuracy": 0.775,
+            "f1_score": 0.8421052631578947,
+            "coefficients": {
+                "semantic_similarity": -0.4095,
+                "context_word_count": 0.1983,
+                "len_diff": -0.0084,
+                "flesch_kincaid_grade": -0.213,
+                "numeric_density": 0.3931,
+                "answer_length_ratio": 0.1976,
+                "perturbation_position": 0.0216,
+                "domain_general": 0.2285,
+                "domain_medical": -0.3651,
+                "domain_legal": -0.7944,
+                "domain_finance": 0.9103
+            },
+            "report": {
+                "0": {
+                    "precision": 0.5384615384615384,
+                    "recall": 0.7,
+                    "f1-score": 0.6086956521739131,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.8888888888888888,
+                    "recall": 0.8,
+                    "f1-score": 0.8421052631578947,
+                    "support": 30.0
+                },
+                "accuracy": 0.775,
+                "macro avg": {
+                    "precision": 0.7136752136752136,
+                    "recall": 0.75,
+                    "f1-score": 0.7254004576659039,
+                    "support": 40.0
+                },
+                "weighted avg": {
+                    "precision": 0.8012820512820513,
+                    "recall": 0.775,
+                    "f1-score": 0.7837528604118994,
+                    "support": 40.0
+                }
+            }
+        },
+        "gradient_boosting": {
+            "accuracy": 0.775,
+            "f1_score": 0.847457627118644,
+            "feature_importances": {
+                "semantic_similarity": 0.062,
+                "context_word_count": 0.1571,
+                "len_diff": 0.0401,
+                "flesch_kincaid_grade": 0.1566,
+                "numeric_density": 0.061,
+                "answer_length_ratio": 0.3348,
+                "perturbation_position": 0.1776,
+                "domain_general": 0.0,
+                "domain_medical": 0.0056,
+                "domain_legal": 0.0049,
+                "domain_finance": 0.0001
+            },
+            "report": {
+                "0": {
+                    "precision": 0.5454545454545454,
+                    "recall": 0.6,
+                    "f1-score": 0.5714285714285714,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.8620689655172413,
+                    "recall": 0.8333333333333334,
+                    "f1-score": 0.847457627118644,
+                    "support": 30.0
+                },
+                "accuracy": 0.775,
+                "macro avg": {
+                    "precision": 0.7037617554858934,
+                    "recall": 0.7166666666666667,
+                    "f1-score": 0.7094430992736077,
+                    "support": 40.0
+                },
+                "weighted avg": {
+                    "precision": 0.7829153605015673,
+                    "recall": 0.775,
+                    "f1-score": 0.7784503631961259,
+                    "support": 40.0
+                }
+            }
+        },
+        "svm": {
+            "accuracy": 0.775,
+            "f1_score": 0.8421052631578947,
+            "report": {
+                "0": {
+                    "precision": 0.5384615384615384,
+                    "recall": 0.7,
+                    "f1-score": 0.6086956521739131,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.8888888888888888,
+                    "recall": 0.8,
+                    "f1-score": 0.8421052631578947,
+                    "support": 30.0
+                },
+                "accuracy": 0.775,
+                "macro avg": {
+                    "precision": 0.7136752136752136,
+                    "recall": 0.75,
+                    "f1-score": 0.7254004576659039,
+                    "support": 40.0
+                },
+                "weighted avg": {
+                    "precision": 0.8012820512820513,
+                    "recall": 0.775,
+                    "f1-score": 0.7837528604118994,
+                    "support": 40.0
+                }
+            }
+        }
+    }
+}
