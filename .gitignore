@@ -1,1 +1,5 @@
 __pycache__
+doc_generators\*.docx
+doc_generators
+*.docx
+docs
